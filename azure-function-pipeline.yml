@@ -9,14 +9,14 @@ steps:
   displayName: Restore
   inputs:
     command: restore
-    projects: '**/DigitalDotsCustomerFunctions.csproj'
+    projects: '**/CustomerFunctions.csproj'
     nugetConfigPath: 'nuget.config'
     feedsToUse: config
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/DigitalDotsCustomerFunctions.csproj'
+    projects: '**/CustomerFunctions.csproj'
     arguments: '--output $(Build.BinariesDirectory)/publish-output --configuration Release'
 
 - task: ArchiveFiles@2
