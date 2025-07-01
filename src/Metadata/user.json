@@ -1,0 +1,22 @@
+{
+  "type": "User",
+  "displayName": "Svet Tot",
+  "customerNumber": "12345TT",
+  "admin": true,
+  "email": "totlyakov@gmail.com",
+  "firstName": "Svet",
+  "lastName": "Tot",
+  "roles": [],
+  "graphUserId": "ad45345e-ba4f-4f6b-b9c6-bfa29cd29a42",
+  "graphPrincipal": "ad45345e-ba4f-4f6b-b9c6-bfa29cd29a42@MetisDevEnvB2C.onmicrosoft.com",
+  "status": "created",
+  "culture": "en-us",
+  "address": {
+    "addressLine1": "string",
+    "addressLine2": "string",
+    "city": "string",
+    "stateProvince": "string",
+    "postalCode": "string",
+    "country": "string"
+  }
+}

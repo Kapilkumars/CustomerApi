@@ -1,0 +1,67 @@
+[
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Developement",
+    "slotSetting": false
+  },
+  {
+    "name": "AZURE_CLIENT_ID",
+    "value": "d500dcb7-14e4-439b-a756-938f0f6dbc60",
+    "slotSetting": false
+  },
+  {
+    "name": "AZURE_CLIENT_SECRET",
+    "value": "96L8Q~RCNFUuRjJ.p2u021Te5i8AHSEKRYaD1bbK",
+    "slotSetting": false
+  },
+  {
+    "name": "AZURE_TENANT_ID",
+    "value": "16eb98a2-f253-40d5-be2b-157261a9a2e8",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureKeyVaultUrl",
+    "value": "https://meti-kv-dev.vault.azure.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureResourceManagerClientId",
+    "value": "554e9a62-2690-45fd-8ee8-8c540f3e661c",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureTwinsAccessClientId",
+    "value": "e8462489-e1c4-485e-937f-b095d0703ea5",
+    "slotSetting": false
+  },
+  {
+    "name": "CollectTelemetryData",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "FORGE_CLIENT_ID",
+    "value": "F3FKy5S8XR5mXHJyj1G7kWVZZNjV4GgI",
+    "slotSetting": false
+  },
+  {
+    "name": "IsGatewayHardwareAvailable",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "SumoSourceCategory",
+    "value": "Metis App Dev",
+    "slotSetting": false
+  },
+  {
+    "name": "SumoSourceName",
+    "value": "Metis App Application logs Dev",
+    "slotSetting": false
+  },
+  {
+    "name": "VirtualDemoMode",
+    "value": "true",
+    "slotSetting": false
+  }
+]

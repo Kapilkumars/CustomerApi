@@ -1,0 +1,27 @@
+{
+  "subscriptionNumber": "string",
+  "subscriptionCnt": 1,
+  "startDate": "string",
+  "endDate": "string",
+  "cancelledDate": "string",
+  "created": "string",
+  "lastModified": "string",
+  "entitlemets": [
+    {
+      "startDate": "string",
+      "endDate": "string",
+      "isActive": true,
+      "cancelledDate": null,
+      "lastModified": "string",
+      "entitlementCount": 1,
+      "gracePreiodDays": 15,
+      "status": "Active, Suspended, Grace, Canceled",
+      "module": {
+        "name": "string",
+        "description": "string",
+        "cost": 1.1,
+        "isSubscription": true
+      }
+    }
+  ]
+}

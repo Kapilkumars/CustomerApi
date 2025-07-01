@@ -1,0 +1,34 @@
+pool:
+  name: Azure Pipelines
+
+steps:
+- checkout: self
+- script: dir $(Build.SourcesDirectory)
+
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/DigitalDotsCustomerFunctions.csproj'
+    nugetConfigPath: 'nuget.config'
+    feedsToUse: config
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '**/DigitalDotsCustomerFunctions.csproj'
+    arguments: '--output $(Build.BinariesDirectory)/publish-output --configuration Release'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)/publish-output'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'

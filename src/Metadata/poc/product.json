@@ -1,0 +1,27 @@
+{
+  "id": "60e04509-1ce3-47c1-b87c-5856ae6379fd",
+  "productName": "Metis Cloud",
+  "productVersion": "1.0",
+  "skus": [
+    {
+      "name": "Base",
+      "isActive": true
+    },
+    {
+      "name": "Power BI",
+      "isActive": true
+    },
+    {
+      "name": "Analytics",
+      "isActive": true
+    },
+    {
+      "name": "Digital Twins",
+      "isActive": true
+    },
+    {
+      "name": "Autodesk Construction Cloud Integration",
+      "isActive": true
+    }
+  ]
+}

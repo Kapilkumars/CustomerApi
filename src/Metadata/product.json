@@ -1,0 +1,20 @@
+{
+  "productName": "string",
+  "productDescription": "string",
+  "region": "us",
+  "culture": "en-us",
+  "skus": [
+    {
+      "sku": "MetisControl",
+      "name": "Metis Control",
+      "modules": [
+        {
+            "name": "string",
+            "description": "string",
+            "cost": 1.1,
+            "isSubscription": true
+        }
+      ]
+    }
+  ]
+}

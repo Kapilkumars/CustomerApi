@@ -1,0 +1,186 @@
+{
+  "id": "2899020a-ac1f-4d90-acfb-94136414e421",
+  "type": "Customer",
+  "CustomerName": "City Of Amsterdam",
+  "CustomerNumber": "9091234567F",
+  "Culture": {
+    "DisplayName": "Spanish (Spain)",
+    "Name": "es-ES"
+  },
+  "BillingAccountNumber": "",
+  "Contact": [
+    {
+      "Name": "Tony Stark Jr",
+      "FirstName": "Tony",
+      "LastName": "Stark",
+      "Title": "Mr",
+      "PhoneNumber": "949-981-9999",
+      "FaxNumber": "949-981-9999",
+      "Email": "stark@gmail.com",
+      "AddressLine1": "some address",
+      "AddressLine2": "some address",
+      "City": "LA",
+      "State": "CA",
+      "PostalCode": "92604",
+      "Country": "USA",
+      "IsServiceBuyer": true
+    }
+  ],
+  "Tenants": [
+    {
+      "TenantName": "Van Gogh",
+      "RealEstate": {
+        "Architectures": [ "Van Gogh Museum" ]
+      },
+      "Building": {
+        "buildingType": "Museum, Stadium, Casino, House, Hospital",
+        "Architecture": {
+          "Name": "Van Gogh",
+          "levelCount": 4,
+          "levels": [
+            {
+              "levelName": "First Floor, Basement",
+              "levelType": "Storey, Floor",
+              "rooms": [
+                {
+                  "roomName": "Main Room",
+                  "roomType": "Museum Space, Theater, Casino space etc."
+                }
+              ]
+            }
+          ],
+          "zones": [
+            "Cafeteria Wifi Space"
+          ]
+        }
+      },
+      "Site": {
+        "name": "Van Gogh Museum Site",
+        "zones": [
+          "Outside Parking"
+        ]
+      },
+      "zones": [
+        {
+          "zoneName": "Cafeteria Wifi Space"
+        },
+        {
+          "zoneName": "Outside Parking"
+        }
+      ],
+
+      "Tier": 1000,
+      "Region": "US",
+      "AzureHighAvailabilityMode": false,
+      "InvitationEmail": "stark@gmail.com",
+      "TenantStatus": "Active, Inactive, Suspended",
+      "Products": [
+        {
+          "id": "60e04509-1ce3-47c1-b87c-5856ae6379fd",
+          "productName": "Metis Cloud",
+          "productVersion": "1.0",
+          "skus": [
+            {
+              "name": "Base",
+              "isActive": true
+            },
+            {
+              "name": "Power BI",
+              "isActive": true
+            },
+            {
+              "name": "Analytics",
+              "isActive": true
+            },
+            {
+              "name": "Digital Twins",
+              "isActive": true
+            },
+            {
+              "name": "Autodesk Construction Cloud Integration",
+              "isActive": true
+            }
+          ]
+        }
+      ],
+      "Entitlements": [
+        {
+          "sku": {
+            "name": "Base",
+            "isActive": true
+          },
+          "startDate": "",
+          "endDate": "",
+          "gracePeriodDays": "15",
+          "isActive": true
+        },
+        {
+          "sku": {
+            "name": "Digital Twins",
+            "isActive": true
+          },
+          "startDate": "",
+          "endDate": "",
+          "gracePeriodDays": "15",
+          "isActive": true
+        }
+      ],
+      "Users": [
+        {
+          "id": "97e03a66-4298-409e-a301-7e29ef4ec32a",
+          "userName": "Tony Stark Jr",
+          "CustomerNumber": "9091234567F",
+          "contact": {},
+          "isAdmin": true,
+          "roles": [
+            {
+              "id": "eeeaf1bb-b3bc-4efa-a58d-9ec2bbf14a25",
+              "properties": {
+                "name": "cloudadmin",
+                "displayName": "Cloud Administrator",
+                "description": "Can do all actions and has full data access.",
+                "type": "BuildIn"
+              },
+              "permissions": [
+                {
+                  "category": "Resources",
+                  "actions": [
+                    "Metis.Resources.Cloud/all",
+                    "Metis.Resources.User/all"
+                  ],
+                  "dataActions": []
+                }
+              ]
+            },
+            {
+              "id": "aef5b131-c1ba-4276-9054-1ee65d956adc",
+              "properties": {
+                "name": "lightdesigner",
+                "displayName": "Light Designer",
+                "description": "Can work on RCP. But it can't provision new building setup. And it can't add or remove light devices.'",
+                "type": "BuildIn"
+              },
+              "permissions": [
+                {
+                  "category": "RCP",
+                  "actions": [
+                    "Metis.Building.RCP.Fixtures/read",
+                    "Metis.Building.RCP.Fixtures/update"
+                  ],
+                  "dataActions": [
+                    "AzureCosmos.gateways/read",
+                    "AzureCosmos.gateways/update",
+                    "AzureDigitalTwin.LightDevices/read",
+                    "AzureDigitalTwin.LightDevices/update",
+                    "AzureDeviceTwins.LightDevices/read",
+                    "AzureDeviceTwins.LightDevices/update"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

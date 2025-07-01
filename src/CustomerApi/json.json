@@ -1,0 +1,12 @@
+{
+  "displayName": "Svet Tot",
+  "firstName": "Svet",
+  "lastName": "Tot",
+  "customerNumber": "12345TT",
+  "email": "totlyakov+2@gmail.com",
+  "status": "invited",
+  "roles": [
+    "cloudadmin"
+  ],  
+  "admin": true
+}

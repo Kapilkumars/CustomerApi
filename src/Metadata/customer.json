@@ -1,0 +1,54 @@
+{
+  "type": "Customer",
+  "customerName": "string",
+  "customerNumber": "string",
+  "customerAddress": {
+    "addressLine1": "string",
+    "addressLine2": "string",
+    "city": "string",
+    "stateProvince": "string",
+    "postalCode": "string",
+    "country": "string",
+    "culture": "en-us"
+  },
+  "tenants": [
+    {
+      "tenantName": "string",
+      "tenantStatus": "string",
+      "created": "string",
+      "lastModified": "string",
+      "invitationEmail": "string",
+      "subscriptions": [
+        {
+          "subscriptionNumber": "string",
+          "subscriptionCnt": 1,
+          "startDate": "string",
+          "endDate": "string",
+          "cancelledDate": "string",
+          "created": "string",
+          "lastModified": "string",
+          "entitlemets": [
+            {
+              "startDate": "string",
+              "endDate": "string",
+              "isActive": true,
+              "cancelledDate": "string",
+              "lastModified": "string",
+              "entitlementCount": 1,
+              "gracePreiodDays": 15,
+              "module": {
+                "name": "string",
+                "description": "string",
+                "cost": 1.1,
+                "isSubscription": true
+              }
+            }
+          ]
+        }
+      ],
+      "sites": [
+        "Lucas"
+      ]
+    }
+  ]
+}

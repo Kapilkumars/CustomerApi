@@ -1,0 +1,54 @@
+{
+  "id": "97e03a66-4298-409e-a301-7e29ef4ec32a",
+  "type": "User",
+  "displayName": "Tony Stark Jr",
+  "CustomerNumber": "9091234567F",
+  "admin": true,
+  "roles": [
+    {
+      "id": "eeeaf1bb-b3bc-4efa-a58d-9ec2bbf14a25",
+      "properties": {
+        "name": "cloudadmin",
+        "displayName": "Cloud Administrator",
+        "description": "Can do all actions and has full data access.",
+        "type": "BuildIn"
+      },
+      "permissions": [
+        {
+          "category": "Resources",
+          "actions": [
+            "Metis.Resources.Cloud/all",
+            "Metis.Resources.User/all"
+          ],
+          "dataActions": []
+        }
+      ]
+    },
+    {
+      "id": "aef5b131-c1ba-4276-9054-1ee65d956adc",
+      "properties": {
+        "name": "lightdesigner",
+        "displayName": "Light Designer",
+        "description": "Can work on RCP. But it can't provision new building setup. And it can't add or remove light devices.'",
+        "type": "BuildIn"
+      },
+      "permissions": [
+        {
+          "category": "RCP",
+          "actions": [
+            "Metis.Building.RCP.Fixtures/read",
+            "Metis.Building.RCP.Fixtures/update"
+          ],
+          "dataActions": [
+            "AzureCosmos.gateways/read",
+            "AzureCosmos.gateways/update",
+            "AzureDigitalTwin.LightDevices/read",
+            "AzureDigitalTwin.LightDevices/update",
+            "AzureDeviceTwins.LightDevices/read",
+            "AzureDeviceTwins.LightDevices/update"
+          ]
+        }
+      ]
+    }
+  ]
+}

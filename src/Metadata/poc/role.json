@@ -1,0 +1,103 @@
+[
+  {
+    "name": "cloudadmin",
+    "properties": {
+      "displayName": "Cloud Administrator",
+      "description": "Can do all actions and has full data access.",
+      "type": "BuildIn"
+    },
+    "permissions": [
+      {
+        "category": "Resources",
+        "actions": [
+          "Metis.Resources.Cloud/all"
+        ],
+        "dataActions": []
+      }
+    ]
+  },
+  {
+    "name": "useradmin",
+    "properties": {
+      "displayName": "User Administrator",
+      "description": "Can do all actions and has full access for Metis Users.",
+      "type": "BuildIn"
+    },
+    "permissions": [
+      {
+        "category": "Resources",
+        "actions": [
+          "Metis.Users/all"
+        ],
+        "dataActions": [
+          "AzureGraph.Users.all"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "customeruseradmin",
+    "properties": {
+      "displayName": "User Administrator for a customer",
+      "description": "Can do all actions and has full access for Metis Users for specific customer.",
+      "type": "BuildIn"
+    },
+    "permissions": [
+      {
+        "category": "Resources",
+        "actions": [
+          "Metis.Users.Customer/all"
+        ],
+        "dataActions": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lightdesigner",
+    "properties": {
+
+      "displayName": "Light Designer",
+      "description": "Can work on RCP. But it can't provision new building setup. And it can't add or remove light devices.'",
+      "type": "BuildIn"
+    },
+    "permissions": [
+      {
+        "category": "RCP",
+        "actions": [
+          "Metis.Building.RCP.Fixtures/read",
+          "Metis.Building.RCP.Fixtures/update"
+        ],
+        "dataActions": [
+          "AzureCosmos.gateways/read",
+          "AzureCosmos.gateways/update",
+          "AzureDigitalTwin.LightDevices/read",
+          "AzureDigitalTwin.LightDevices/update",
+          "AzureDeviceTwins.LightDevices/read",
+          "AzureDeviceTwins.LightDevices/update"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lightdesigneradmin",
+    "properties": {
+      "displayName": "Light Designer Admin",
+      "description": "Full access to RCP and gateway pages.",
+      "type": "BuildIn"
+    },
+    "permissions": [
+      {
+        "category": "RCP",
+        "actions": [
+          "Metis.Building.RCP.Fixtures/all"
+        ],
+        "dataActions": [
+          "AzureCosmos.gateways/all",
+          "AzureDigitalTwin.LightDevices/all",
+          "AzureDeviceTwins.LightDevices/all"
+        ]
+      }
+    ]
+  }
+]
