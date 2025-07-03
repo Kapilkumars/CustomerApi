@@ -6,32 +6,32 @@
   },
   {
     "name": "AZURE_CLIENT_ID",
-    "value": "d500dcb7-14e4-439b-a756-938f0f6dbc60",
+    "value": "",
     "slotSetting": false
   },
   {
     "name": "AZURE_CLIENT_SECRET",
-    "value": "96L8Q~RCNFUuRjJ.p2u021Te5i8AHSEKRYaD1bbK",
+    "value": "",
     "slotSetting": false
   },
   {
     "name": "AZURE_TENANT_ID",
-    "value": "16eb98a2-f253-40d5-be2b-157261a9a2e8",
+    "value": "",
     "slotSetting": false
   },
   {
     "name": "AzureKeyVaultUrl",
-    "value": "https://meti-kv-dev.vault.azure.net/",
+    "value": "https://kv-dev.vault.azure.net/",
     "slotSetting": false
   },
   {
     "name": "AzureResourceManagerClientId",
-    "value": "554e9a62-2690-45fd-8ee8-8c540f3e661c",
+    "value": "",
     "slotSetting": false
   },
   {
     "name": "AzureTwinsAccessClientId",
-    "value": "e8462489-e1c4-485e-937f-b095d0703ea5",
+    "value": "",
     "slotSetting": false
   },
   {
@@ -41,7 +41,7 @@
   },
   {
     "name": "FORGE_CLIENT_ID",
-    "value": "F3FKy5S8XR5mXHJyj1G7kWVZZNjV4GgI",
+    "value": "",
     "slotSetting": false
   },
   {
@@ -51,12 +51,12 @@
   },
   {
     "name": "SumoSourceCategory",
-    "value": "Metis App Dev",
+    "value": "App Dev",
     "slotSetting": false
   },
   {
     "name": "SumoSourceName",
-    "value": "Metis App Application logs Dev",
+    "value": "App Application logs Dev",
     "slotSetting": false
   },
   {
